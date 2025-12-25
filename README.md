@@ -2,6 +2,8 @@
 
 **Schedule any webpage to open at a specific time.**
 
+![Later demo](demo.gif)
+
 Found an interesting article but don't have time now? Want to auto-join meetings without watching the clock? Later lets you schedule URLs to open exactly when you need them.
 
 ## How it works
