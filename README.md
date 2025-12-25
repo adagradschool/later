@@ -36,7 +36,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### 1. Clone and install daemon
 
 ```bash
-git clone https://github.com/yourusername/later.git
+git clone https://github.com/adagradschool/later.git
 cd later/daemon
 uv sync
 ```
