@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Later</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-info">
+      <h1 class="page-title" id="pageTitle">Loading...</h1>
+      <p class="page-url" id="pageUrl"></p>
+    </header>
+
+    <section class="presets">
+      <button class="preset-btn" data-preset="1hr">In 1hr</button>
+      <button class="preset-btn" data-preset="tonight">Tonight</button>
+      <button class="preset-btn" data-preset="tomorrow">Tomorrow</button>
+    </section>
+
+    <section class="scheduler">
+      <label for="scheduledTime">Or pick a time:</label>
+      <div class="scheduler-row">
+        <input type="datetime-local" id="scheduledTime">
+        <button id="scheduleBtn" class="btn primary" disabled>Schedule</button>
+      </div>
+    </section>
+
+    <section class="status" id="status" hidden>
+      <p id="statusMessage"></p>
+    </section>
+
+    <section class="scheduled-list" id="scheduledList" hidden>
+      <h2>Today's Schedule</h2>
+      <ul id="scheduleItems"></ul>
+    </section>
+  </div>
+
+  <script src="../lib/api.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
